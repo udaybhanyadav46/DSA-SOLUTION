@@ -12,5 +12,13 @@ class Operator {
     int position = 1;
     int result = (number | (1 << position));
     System.out.println(result);
+
+    // Clear i th bit
+
+    int num = 7;
+    int pos = 1;
+    int resu = (num & (~(1 << i)));
+    System.out.println(resu);
+
   }
 }
