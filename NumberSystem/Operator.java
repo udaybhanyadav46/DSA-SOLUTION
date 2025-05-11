@@ -14,11 +14,16 @@ class Operator {
     System.out.println(result);
 
     // Clear i th bit
-
     int num = 7;
     int pos = 1;
     int resu = (num & (~(1 << i)));
     System.out.println(resu);
+
+    // Get 1 th bit
+    int n = 5;
+    int p = 1;
+    int r = ((n >> p) & (1));
+    System.out.println("The " + i + " th bit of " + n + " is: " + r);
 
   }
 }
