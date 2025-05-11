@@ -25,5 +25,10 @@ class Operator {
     int r = ((n >> p) & (1));
     System.out.println("The " + i + " th bit of " + n + " is: " + r);
 
+    // Update i th bit
+    int nu = 5;
+    int po = 1;
+    int re = (nu ^ (1 << po));
+    System.out.println(re);
   }
 }
