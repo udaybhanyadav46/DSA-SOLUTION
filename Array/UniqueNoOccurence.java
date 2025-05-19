@@ -19,10 +19,6 @@ public class UniqueNoOccurence {
       }
     }
     count[index++] = c;
-    for (int i = 0; i < count.length; i++) {
-      System.out.print(count[i] + " ");
-    }
-    System.out.println();
     for (int i = 0; i < index; i++) {
       for (int j = i + 1; j < index; j++) {
         if (count[i] == count[j]) {
