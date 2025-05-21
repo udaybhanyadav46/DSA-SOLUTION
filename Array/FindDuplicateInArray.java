@@ -45,11 +45,28 @@ public class FindDuplicateInArray {
     return ans;
   }
 
+  // Apporach 4
+  public static int forthWay(int[] nums) {
+    int result = 0;
+    for (int i = 0; i < nums.length; i++) {
+      int value = Math.abs(nums[i]);
+      int index = value - 1;
+      if (nums[index] < 0) {
+        result = value;
+        break;
+      } else {
+        nums[index] = -nums[index];
+      }
+    }
+    return result;
+  }
+
   public static void main(String[] args) {
     // 287. Find the Duplicate Number
     int arr[] = { 1, 3, 4, 2, 2 };
     System.out.println(firstWay(arr));
     System.out.println(secondWay(arr));
     System.out.println(thirdWay(arr));
+    System.out.println(forthWay(arr));
   }
 }
